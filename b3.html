@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Art Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      font-size: 26px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .highlighted-voice {
+      background-color: #f0f8ff; /* Light blue background */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+      border: 2px solid #4CAF50; /* Green border */
+    }
+
+    .highlighted-voice audio {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .art-gallery-button {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 25px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+    .art-gallery-button:hover {
+      background-color: #45a049;
+    }
+
+    .contact-links {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    /* Media Query for mobile */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      .message {
+        font-size: 14px;
+      }
+
+      .highlighted-voice {
+        padding: 15px;
+      }
+
+      .highlighted-voice audio {
+        width: 100%;
+        height: auto;
+      }
+
+      .art-gallery-button {
+        font-size: 16px;
+        padding: 12px 22px;
+      }
+
+      .contact-button {
+        font-size: 14px;
+        padding: 10px 18px;
+      }
+
+      footer {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Art Page</h1>
+    <div class="message">
+      <p>Hello! This is the artwork I created for you in my book. There are still many pictures that are not uploaded yet. If you're brave enough, feel free to message me!</p>
+    </div>
+
+    <!-- Important Message -->
+    <div class="message">
+      <p><strong>Important message:</strong> Please play the 2 voice clips below.</p>
+    </div>
+
+    <!-- Voice Clips Section -->
+    <div class="highlighted-voice">
+      <h2>Voice Clips</h2>
+      <audio id="voiceClip1" controls>
+        <source src="v2.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="voiceClip2" controls>
+        <source src="v3.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <!-- PDF Download Button -->
+    <a href="Lachuzz.pdf" class="art-gallery-button" id="downloadButton" download>Download Art Gallery PDF</a>
+
+    <!-- Contact Links -->
+    <div class="contact-links">
+      <a href="https://wa.me/916235279156" target="_blank" class="contact-button whatsapp">
+        <img src="download.jpg" alt="WhatsApp Logo">
+      </a>
+      <a href="https://www.instagram.com/unnikrishnnaann/" target="_blank" class="contact-button instagram">
+        <img src="download (1).jpg" alt="Instagram Logo">
+      </a>
+    </div>
+
+    <!-- Follow Us Section -->
+    <section class="social_container">
+      <h2>Follow Us</h2>
+      <div class="social_box">
+        <a href="https://facebook.com">
+          <img src="fb.png" alt="Facebook Logo">
+        </a>
+        <a href="https://twitter.com">
+          <img src="twitter.png" alt="Twitter Logo">
+        </a>
+        <a href="https://linkedin.com">
+          <img src="linkedin.png" alt="LinkedIn Logo">
+        </a>
+        <a href="https://youtube.com">
+          <img src="youtube.png" alt="YouTube Logo">
+        </a>
+      </div>
+    </section>
+
+    <!-- Back Button -->
+    <a href="https://unnikrishnan803.pages.dev/gift" class="contact-button">B Day Gift</a>
+    <a href="index.html" class="contact-button">Back to Main Menu</a>
+  </div>
+
+  <footer>
+    <p>© 2024 My Art Page | Designed by Unnikrishnan</p>
+  </footer>
+</body>
+</html>
